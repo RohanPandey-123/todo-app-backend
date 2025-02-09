@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "https://todo-app-frontend-lake.vercel.app/", credentials: true }));
 
 
 mongoose.connect(process.env.MONGO_URI, {
